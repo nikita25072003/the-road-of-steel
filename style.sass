@@ -1,0 +1,192 @@
+$display: flex
+$full-size: 100%
+$cursor: pointer
+$font-weight: 400
+$color: #fff
+$margin: 0
+$box-sizing: border-box
+
+html, body 
+  height: $full-size
+  margin: $margin
+
+.wrapper
+  display: $display
+  flex-direction: column
+  width: $full-size
+  height: $full-size
+  background-size: cover
+  background-position: center
+  background-image: url(./img/photo-background.jpg)
+
+.top-part
+  display: $display
+  flex-direction: row
+  justify-content: center
+  width: $full-size
+  height: 25%
+  padding-top: 32px
+  box-sizing: $box-sizing
+
+.novel-title
+  font-family: "Aguafina Script", sans-serif
+  font-weight: $font-weight
+  font-size: 96px
+  margin: $margin
+  color: $color
+
+.bottom-part
+  display: $display
+  flex-direction: row
+  align-items: flex-end
+  flex-wrap: wrap
+  width: $full-size
+  height: 75%
+
+@mixin bottom-left-part
+  display: $display
+  flex-direction: row
+  justify-content: flex-end
+  align-items: flex-end
+  width: 50%
+  height: $full-size
+  padding: 0 16px 52px 0
+  box-sizing: $box-sizing
+
+.bottom-left-part
+  @include bottom-left-part
+
+@mixin button-start
+  cursor: $cursor
+  display: $display
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  font-family: "Lemon", sans-serif
+  border: 1.50px solid #fff
+  border-radius: 13px
+  width: $full-size
+  max-width: 279px
+  height: $full-size
+  max-height: 80px
+  font-weight: $font-weight
+  font-size: 40px
+  color: $color
+  transition: 0.7s
+  background-color: rgba(168, 168, 168, 0.4)
+
+.button-start 
+  @include button-start
+
+.button-start:hover
+  background-color: rgba(168, 168, 168, 0.6)
+
+.bottom-right-part
+  @include bottom-left-part
+  justify-content: flex-start
+  padding: 0 0 52px 16px
+
+.button-exit
+  @include button-start
+
+.button-exit:hover
+  background-color: rgba(168, 168, 168, 0.6)
+
+$laptop1: 1024px
+$tablet1: 600px
+$tablet2: 540px
+$mobile1: 430px
+$mobile2: 420px
+$mobile3: 414px
+$mobile4: 380px
+$mobile5: 365px
+$mobile6: 325px
+$mobile7: 300px
+
+@media screen and (max-width: $laptop1)
+  
+  .novel-title
+    font-size: 86px
+
+  .button-start, .button-exit
+    max-width: 249px
+    max-height: 60px
+    font-size: 33px
+
+@media screen and (max-width: $tablet1)
+  
+  .novel-title
+    font-size: 66px
+
+  .button-start, .button-exit
+    max-width: 229px
+
+@media screen and (max-width: $tablet2)
+  
+  .novel-title
+    font-size: 56px
+
+  .bottom-part
+    flex-direction: column
+
+  .bottom-left-part, .bottom-right-part
+    justify-content: center
+    width: $full-size
+
+  .bottom-left-part
+    height: 80%
+    padding: 0
+  
+  .bottom-right-part
+    height: 20%
+    padding: 0
+    padding-bottom: 32px
+
+  .button-start, .button-exit
+    max-width: 279px
+
+@media screen and (max-width: $mobile1)
+
+  .button-start, .button-exit
+    max-height: 50px
+
+@media screen and (max-width: $mobile2)
+
+  .button-start, .button-exit
+    max-height: 65px
+
+@media screen and (max-width: $mobile3)
+
+  .novel-title
+    font-size: 46px
+
+  .button-start, .button-exit
+    max-height: 65px
+
+@media screen and (max-width: $mobile4)
+
+  .button-start, .button-exit
+    max-width: 249px
+    max-height: 45px
+    font-size: 28px
+
+@media screen and (max-width: $mobile5)
+
+  .button-start, .button-exit
+    max-height: 55px
+
+@media screen and (max-width: $mobile6)
+
+  .button-start, .button-exit
+    max-height: 50px
+
+@media screen and (max-width: $mobile7)
+
+  .novel-title
+    font-size: 36px
+
+  .button-start, .button-exit
+    max-width: 229px
+    max-height: 50px
+    font-size: 28px

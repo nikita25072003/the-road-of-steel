@@ -1,0 +1,223 @@
+html, body {
+  height: 100%;
+  margin: 0; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/photo-background-1.jpg); }
+
+.top-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 85%;
+  padding-top: 26px;
+  box-sizing: border-box; }
+
+.man-tgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  width: 100%;
+  max-width: 901px;
+  height: 100%;
+  max-height: 580px;
+  border: 1.5px solid #4b4f4e;
+  border-radius: 13px;
+  padding-bottom: 47px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/man-tgs.jpg); }
+
+.descr {
+  font-family: "Lemon", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  color: #fff; }
+
+.bottom-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15%; }
+
+.container-bottom-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 901px;
+  height: 100%; }
+
+.bottom-left-part, .bottom-right-part {
+  width: 33.3%;
+  height: 100%; }
+
+.button-back, .button-menu, .button-next {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Lemon", sans-serif;
+  border: 1.5px solid #4b4f4e;
+  border-radius: 13px;
+  width: 100%;
+  max-width: 279px;
+  height: 100%;
+  max-height: 80px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #fff;
+  transition: 0.7s;
+  background-color: rgba(141, 148, 139, 0.4); }
+
+.button-back:hover {
+  background-color: rgba(141, 148, 139, 0.6); }
+
+.button-menu:hover {
+  background-color: rgba(141, 148, 139, 0.6); }
+
+.button-next:hover {
+  background-color: rgba(141, 148, 139, 0.6); }
+
+.bottom-center-part {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 33.4%; }
+
+.bottom-right-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+@media screen and (max-width: 1920px) {
+  .top-part {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 70%;
+    padding: 0; }
+
+  .bottom-part {
+    height: 30%;
+    padding-top: 32px;
+    box-sizing: border-box; } }
+@media screen and (max-width: 1750px) {
+  .top-part {
+    align-items: center;
+    height: 85%; }
+
+  .top-part, .bottom-part {
+    padding: 0; }
+
+  .bottom-part {
+    height: 15%; } }
+@media screen and (max-width: 1280px) {
+  .top-part {
+    align-items: center;
+    height: 85%; }
+
+  .top-part, .bottom-part {
+    padding: 0; }
+
+  .bottom-part {
+    height: 15%; } }
+@media screen and (max-width: 910px) {
+  .top-part {
+    height: 60%; }
+
+  .man-tgs {
+    max-width: 621px;
+    max-height: 380px;
+    padding-bottom: 17px; }
+
+  .descr {
+    font-size: 10px; }
+
+  .bottom-part {
+    flex-direction: column;
+    height: 40%; }
+
+  .container-bottom-center {
+    flex-direction: column;
+    height: 100%;
+    padding: 0; }
+
+  .bottom-left-part, .bottom-right-part, .bottom-center-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+
+  .bottom-left-part, .bottom-right-part {
+    height: 33.3%; }
+
+  .bottom-center-part {
+    height: 33.4%; }
+
+  .button-back, .button-menu, .button-next {
+    max-width: 379px;
+    max-height: 70px; } }
+@media screen and (max-width: 630px) {
+  .man-tgs {
+    max-width: 521px;
+    max-height: 350px; }
+
+  .descr {
+    font-size: 9px; }
+
+  .button-back, .button-menu, .button-next {
+    max-width: 379px;
+    max-height: 65px; } }
+@media screen and (max-width: 525px) {
+  .man-tgs {
+    max-width: 421px;
+    max-height: 300px; }
+
+  .descr {
+    font-size: 7px; }
+
+  .button-back, .button-menu, .button-next {
+    max-width: 329px;
+    max-height: 60px; } }
+@media screen and (max-width: 430px) {
+  .man-tgs {
+    max-width: 321px;
+    max-height: 350px; }
+
+  .descr {
+    font-size: 5px; }
+
+  .button-back, .button-menu, .button-next {
+    max-width: 321px; } }
+@media screen and (max-width: 328px) {
+  .man-tgs {
+    max-width: 221px;
+    max-height: 350px; }
+
+  .descr {
+    font-size: 3px; }
+
+  .button-back, .button-menu, .button-next {
+    max-width: 221px;
+    max-height: 50px;
+    font-size: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
